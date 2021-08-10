@@ -1,4 +1,5 @@
 #-- STM32 Cube Makefile parser -------------------------------------------------
+# Based on https://github.com/SL-RU/STM32CubeMX_cmake
 function(mk_read_vars mkfile)
     file(READ "${mkfile}" file_raw)
     string(REPLACE "\\\n" "" file_raw ${file_raw})
